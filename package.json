@@ -3,8 +3,9 @@
   "name": "slides",
   "version": "1.0.0",
   "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths && mv public docs"
+    "clean": "rm -rf .cache docs public",
+    "start": "yarn clean && gatsby develop",
+    "build": "yarn clean && gatsby build --prefix-paths && mv public docs"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
