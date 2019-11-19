@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "slides",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build && mv public docs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "gatsby": "^2.17.15",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
+    "gatsby-theme-mdx-deck": "^3.0.13",
+    "husky": "^3.0.9",
+    "mdx-deck": "^3.0.13",
+    "prettier": "~1.18.0",
+    "pretty-quick": "^2.0.1",
+    "typescript": "^3.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
