@@ -1,7 +1,6 @@
 const proj = require('./package.json').name;
 
 module.exports = {
-  // change this to something like '/pages/pengxiao/slides/'
   pathPrefix: `/${proj}`,
   plugins: [
     {
